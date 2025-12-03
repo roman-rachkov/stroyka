@@ -1,0 +1,79 @@
+#index-page {
+    background: var(--dark-brown);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#index-page .index-page-slider {
+    width: 100vw;
+    height: 100vh;
+}
+#index-page .index-page-slider .slider__item {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#index-page .index-page-slider .slider__item .index-page-slider-info {
+    min-width: 40vw; /* 577 / (1440 / 100) */
+    height: 100vh;
+}
+
+#index-page .index-page-slider .slider__item .index-page-slider__picture {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    gap: 0.83vw;
+}
+
+#index-page .index-page-slider .slider__item .index-page-slider__picture .index-page-slider-image {
+    background: var(--background);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#index-page .index-page-slider .slider__item .index-page-slider__picture .index-page-slider-image::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: var(--dark-brown);
+    opacity: 0.54;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#index-page .index-page-slider .slider__item .index-page-slider__picture .index-page-slider__delimiter {
+    width: 2.57vw;
+    height: 53.125vh;
+    background: var(--delimiter-color);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#index-page .index-page-slider .slider__item .index-page-slider__picture .index-page-slider-image.index-page-slider__small-image {
+    width: 1.6vw;
+    height: 41.46vh;
+    background-position: 35% center;
+}
+
+#index-page .index-page-slider .slider__item .index-page-slider__picture .index-page-slider-image.index-page-slider__medium-image {
+    width: 4.17vw;
+    height: 63.75vh;
+    background-position: 35% center;
+}
+
+#index-page .index-page-slider .slider__item .index-page-slider__picture .index-page-slider-image.index-page-slider__main-image {
+    height: 100%;
+    width: 100%;
+    background-size: 110% auto; /* Еще больше для основного изображения */
+}
