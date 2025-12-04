@@ -2,7 +2,56 @@ import Snake from './snake.js'
 
 window.addEventListener('load', () => {
   document.addEventListener('mousemove', parallax);
-  new Snake('.slider')
+  new Snake('.index-page-slider', {
+    mobileFirst: false,
+    swipe: true,
+    speed: 300,
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    arrows: true
+  })
+
+  const slides = document.querySelectorAll('.index-page-slider .slider__item');
+  const arrow = document.querySelectorAll('#index-page .snake-arrow.snake-next')[0];
+  arrow.setAttribute('data-text-after', 'НАШИ ОБЬЕКТЫ');
+
+  const observer = new MutationObserver(function (mutationsList) {
+    for (const mutation of mutationsList) {
+
+      if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+        if (mutation.target.classList.contains('snake-active')) {
+          let content = 'НАШИ ОБЬЕКТЫ';
+
+          switch (mutation.target.id) {
+            case 'our-objects-slide':
+              content = 'НОВОСТИ';
+              break;
+            case 'news-slide':
+              content = 'КОНТАКТЫ';
+              break;
+            case 'contacts-slide':
+              content = 'О КОМПАНИИ';
+              break;
+            case 'about-company-slide':
+            default:
+              content = 'НАШИ ОБЬЕКТЫ';
+              break;
+          }
+
+          arrow.setAttribute('data-text-after', content);
+        }
+      }
+    }
+  });
+
+  const config = {attributes: true, attributeFilter: ['class']};
+
+  for (const slide of slides) {
+    observer.observe(slide, config);
+  }
+
 })
 
 function parallax(e) {
@@ -13,10 +62,10 @@ function parallax(e) {
     let leftOffset = 50;
     if (container.classList.contains('index-page-slider__small-image')) {
       speed = 0.08;
-      leftOffset=20;
+      leftOffset = 20;
     } else if (container.classList.contains('index-page-slider__medium-image')) {
       speed = 0.04;
-      leftOffset=30;
+      leftOffset = 30;
     } else if (container.classList.contains('index-page-slider__main-image')) {
       speed = 0.02;
     }
