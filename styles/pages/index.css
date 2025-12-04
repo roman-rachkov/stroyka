@@ -9,6 +9,26 @@
 
 #index-page .snake-dots {
     bottom: 2.4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+#index-page .snake-dots li,
+#index-page .snake-dots li button,
+#index-page .snake-dots li button:before {
+    width: 62px;
+    height: 5px;
+}
+
+#index-page .snake-dots li button:before {
+    display: block;
+    content: '';
+    background: rgba(255,255,255, .53);
+}
+#index-page .snake-dots li.snake-active button:before {
+    background: rgba(255,255,255, 1);
+
 }
 
 #index-page .snake-arrow.snake-prev {

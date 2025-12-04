@@ -1,5 +1,56 @@
-*{
+* {
     box-sizing: border-box;
+}
+#loader {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000000;
+    display: block;
+    background: var(--dark-brown);
+}
+
+#loader:before,
+#loader:after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    content: '';
+    width: 64px;
+    height: 64px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Белый логотип */
+#loader:before {
+    background-image: url("../assets/icons/logo-white.svg");
+    opacity: 0;
+    animation: fadeLogo 3s ease-in-out infinite;
+}
+
+/* Коричневый логотип */
+#loader:after {
+    background-image: url("../assets/icons/logo-brown.svg");
+    opacity: 1;
+    animation: fadeLogo 3s ease-in-out infinite reverse;
+}
+
+@keyframes fadeLogo {
+    0%, 40% {
+        opacity: 1;
+    }
+    50%, 90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 body {
@@ -48,15 +99,16 @@ header .header-wrapper .menu-btn {
     height: 48px;
 }
 
-.header-contacts__item{
+.header-contacts__item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.header-contacts .header-contacts-item__title{
+.header-contacts .header-contacts-item__title {
     font-size: 12px;
 }
-.header-contacts .header-contacts-item__phone{
+
+.header-contacts .header-contacts-item__phone {
     font-size: 20px;
 }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
+<div id="loader"></div>
 
 <div id="index-page">
     <header>
