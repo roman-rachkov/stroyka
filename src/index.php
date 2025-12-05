@@ -120,7 +120,7 @@
     </div>
     <footer>
         <div class="container">
-            <div class="copywright">
+            <div class="copyright">
                 2025, ГК Владстройзаказчик
             </div>
         </div>
