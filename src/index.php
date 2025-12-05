@@ -67,17 +67,15 @@
             <div class="index-page-slider-info">
                 <div class="container index-page-slider-info__wrapper">
                     <div class="index-page-slider-info__title">
-                        <div class="index-page-slider-info__title-number">01</div>
-                        <div class="index-page-slider-info__title-text">о компании</div>
+                        <div class="index-page-slider-info__title-number">02</div>
+                        <div class="index-page-slider-info__title-text">наши объекты</div>
                     </div>
                     <div class="index-page-slider-info__description">
-                        “Владстройзаказчик” – это стабильная компетентная компания, объединившая высококвалифицированных
-                        специалистов для решения строительных задач любой сложности.
+                        Наша работа — это не просто метры бетона и стекла, а создание современной среды для жизни, в
+                        которой сочетаются проверенное качество и актуальные стандарты.
                     </div>
                     <div class="index-page-slider-info__buttons">
-                        <a class="index-page-slider-info__button">о компании</a>
-                        <a class="index-page-slider-info__button">история</a>
-                        <a class="index-page-slider-info__button">наши преимущества</a>
+                        <a class="index-page-slider-info__button" href="#">подробнее</a>
                     </div>
                 </div>
             </div>
@@ -95,17 +93,17 @@
             <div class="index-page-slider-info">
                 <div class="container index-page-slider-info__wrapper">
                     <div class="index-page-slider-info__title">
-                        <div class="index-page-slider-info__title-number">01</div>
-                        <div class="index-page-slider-info__title-text">о компании</div>
+                        <div class="index-page-slider-info__title-number">03</div>
+                        <div class="index-page-slider-info__title-text">Новости</div>
                     </div>
                     <div class="index-page-slider-info__description">
-                        “Владстройзаказчик” – это стабильная компетентная компания, объединившая высококвалифицированных
-                        специалистов для решения строительных задач любой сложности.
+                        Оставайтесь в курсе нашего развития.
+                        В этом разделе мы публикуем все, что важно
+                        для вас: от запуска новых проектов
+                        до изменений в условиях сотрудничества.
                     </div>
                     <div class="index-page-slider-info__buttons">
-                        <a class="index-page-slider-info__button">о компании</a>
-                        <a class="index-page-slider-info__button">история</a>
-                        <a class="index-page-slider-info__button">наши преимущества</a>
+                        <a class="index-page-slider-info__button" href="#">подробнее</a>
                     </div>
                 </div>
             </div>
@@ -117,37 +115,16 @@
                      style="--background: url('../../assets/images/index-slider-news.jpg')"></div>
                 <div class="index-page-slider-image index-page-slider__main-image"
                      style="--background: url('../../assets/images/index-slider-news.jpg')"></div>
-            </div>
-        </div>
-        <div id="contacts-slide" class="slider__item">
-            <<div class="index-page-slider-info">
-                <div class="container index-page-slider-info__wrapper">
-                    <div class="index-page-slider-info__title">
-                        <div class="index-page-slider-info__title-number">01</div>
-                        <div class="index-page-slider-info__title-text">о компании</div>
-                    </div>
-                    <div class="index-page-slider-info__description">
-                        “Владстройзаказчик” – это стабильная компетентная компания, объединившая высококвалифицированных
-                        специалистов для решения строительных задач любой сложности.
-                    </div>
-                    <div class="index-page-slider-info__buttons">
-                        <a class="index-page-slider-info__button">о компании</a>
-                        <a class="index-page-slider-info__button">история</a>
-                        <a class="index-page-slider-info__button">наши преимущества</a>
-                    </div>
-                </div>
-            </div>
-            <div class="index-page-slider__picture">
-                <div class="index-page-slider-image index-page-slider__small-image"
-                     style="--background: url('../../assets/images/index-slider-contacts.jpg')"></div>
-                <div class="index-page-slider__delimiter"></div>
-                <div class="index-page-slider-image index-page-slider__medium-image"
-                     style="--background: url('../../assets/images/index-slider-contacts.jpg')"></div>
-                <div class="index-page-slider-image index-page-slider__main-image"
-                     style="--background: url('../../assets/images/index-slider-contacts.jpg')"></div>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="container">
+            <div class="copywright">
+                2025, ГК Владстройзаказчик
+            </div>
+        </div>
+    </footer>
 </div>
 <script src="./js/index.js" type="module"></script>
 </body>

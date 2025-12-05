@@ -1,0 +1,20 @@
+#contacts-page {
+    background: var(--dark-brown);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    color: var(--bg-color);
+}
+
+#contacts-page header {
+    position: absolute;
+}
+
+#contacts-page footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2.4vh 0;
+}
