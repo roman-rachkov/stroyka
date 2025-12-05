@@ -52,6 +52,8 @@ window.addEventListener('load', () => {
     observer.observe(slide, config);
   }
 
+  document.getElementById('loader').style.display = 'none';
+
 })
 
 function parallax(e) {

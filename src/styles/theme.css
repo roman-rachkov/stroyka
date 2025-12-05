@@ -8,16 +8,14 @@
     left: 0;
     top: 0;
     z-index: 1000000;
-    display: block;
-    background: var(--dark-brown);
+    display: flex;
+    background: var(--second-color);
+    justify-content: center;
+    align-items: center;
 }
 
-#loader:before,
 #loader:after {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     display: block;
     content: '';
     width: 64px;
@@ -27,29 +25,22 @@
     background-position: center;
 }
 
-/* Белый логотип */
-#loader:before {
-    background-image: url("../assets/icons/logo-white.svg");
-    opacity: 0;
-    animation: fadeLogo 3s ease-in-out infinite;
-}
-
 /* Коричневый логотип */
 #loader:after {
     background-image: url("../assets/icons/logo-brown.svg");
     opacity: 1;
-    animation: fadeLogo 3s ease-in-out infinite reverse;
+    animation: fadeLogo 3s linear infinite;
 }
 
 @keyframes fadeLogo {
-    0%, 40% {
-        opacity: 1;
+    0%{
+        transform: scale(1.2);
     }
-    50%, 90% {
-        opacity: 0;
+    50% {
+        transform: scale(1);
     }
     100% {
-        opacity: 1;
+        transform: scale(1.2);
     }
 }
 
