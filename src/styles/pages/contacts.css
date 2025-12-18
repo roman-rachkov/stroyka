@@ -104,3 +104,8 @@
 #contacts-page main .contacts-map img:hover {
     cursor: pointer;
 }
+
+#contacts-page .menu-icon::before,
+#contacts-page .menu-icon::after {
+    background: var(--second-color);
+}

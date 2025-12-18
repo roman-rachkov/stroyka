@@ -28,9 +28,12 @@
                         <div class="header-contacts-item__phone">+7 902-524-23-24</div>
                     </div>
                 </div>
-                <button class="menu-btn">
-                    <img src="./assets/icons/btn-burger-white.svg" alt="burger">
-                </button>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-btn" href="#">
+                    <!--                    <img src="./assets/icons/btn-burger-white.svg" alt="burger">-->
+                    <span class="menu-icon"></span>
+                </label>
+                <?php require_once './components/menu.php' ?>
             </div>
         </div>
     </header>
@@ -125,6 +128,8 @@
             </div>
         </div>
     </footer>
+
+
 </div>
 <script src="./js/index.js" type="module"></script>
 </body>
