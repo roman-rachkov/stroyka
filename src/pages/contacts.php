@@ -18,16 +18,7 @@
                 <a href="/" class="logo">
                     <img src="../assets/icons/logo-white.svg" alt="logo">
                 </a>
-                <div class="header-contacts">
-                    <div class="header-contacts__item">
-                        <div class="header-contacts-item__title">Отдел продаж</div>
-                        <div class="header-contacts-item__phone">+7 (423) 254-23-24</div>
-                    </div>
-                    <div class="header-contacts__item">
-                        <div class="header-contacts-item__title">WhatsApp</div>
-                        <div class="header-contacts-item__phone">+7 902-524-23-24</div>
-                    </div>
-                </div>
+
                 <input type="checkbox" id="menu-toggle">
                 <label for="menu-toggle" class="menu-btn" href="#">
                     <span class="menu-icon"></span>

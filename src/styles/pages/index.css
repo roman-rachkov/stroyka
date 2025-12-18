@@ -273,6 +273,12 @@
 }
 
 #index-page .menu-icon::before,
+#index-page .menu-icon,
 #index-page .menu-icon::after {
     background: var(--second-color);
+}
+
+
+#index-page footer{
+    border: none;
 }

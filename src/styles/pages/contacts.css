@@ -37,24 +37,24 @@
 #contacts-page main .contacts-info .contacts-info__scheme {
     max-width: 550px;
 }
-#contacts-page main .contacts-info .contacts-info__title{
+
+#contacts-page main .contacts-info .contacts-info__title {
     margin-bottom: 90px;
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-#contacts-page main .contacts-info .contacts-info__items{
+#contacts-page main .contacts-info .contacts-info__items {
     margin-bottom: 120px;
 }
-
 
 #contacts-page main .contacts-info__wrapper {
     height: 100%;
     justify-content: center;
 }
 
-#contacts-page main .contacts{
+#contacts-page main .contacts {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
@@ -62,7 +62,7 @@
     font-size: 18px;
 }
 
-#contacts-page main .contacts .contacts__title{
+#contacts-page main .contacts .contacts__title {
     font-weight: 400;
     margin-bottom: 20px;
 }
@@ -70,7 +70,8 @@
 #contacts-page main .contacts .contacts__description {
     font-weight: bold;
 }
-#contacts-page main .contacts .contacts__description a{
+
+#contacts-page main .contacts .contacts__description a {
     text-decoration: none;
     color: var(--second-color);
 }
@@ -105,7 +106,12 @@
     cursor: pointer;
 }
 
+#contacts-page .menu-icon,
 #contacts-page .menu-icon::before,
 #contacts-page .menu-icon::after {
     background: var(--second-color);
+}
+
+#contacts-page footer {
+    border: none;
 }

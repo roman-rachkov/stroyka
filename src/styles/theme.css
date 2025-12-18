@@ -1,6 +1,20 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-brown);
+}
+
 #loader {
     width: 100vw;
     height: 100vh;
@@ -33,7 +47,7 @@
 }
 
 @keyframes fadeLogo {
-    0%{
+    0% {
         transform: scale(1.2);
     }
     50% {
@@ -69,6 +83,7 @@ header {
 header .header-wrapper {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     z-index: 100;
 }
 
@@ -104,6 +119,97 @@ header .header-wrapper .menu-btn {
     font-size: 20px;
 }
 
-.footer{
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 250px;
+}
 
+.contacts .contacts__main-title {
+    margin-bottom: 20px;
+}
+
+.contacts .contacts__item,
+.contacts .contacts__title,
+.contacts .contacts__description {
+    width: max-content;
+}
+
+.contacts .contacts__title{
+    margin-bottom: 5px;
+}
+
+
+.contacts .contacts__description,
+.contacts .contacts__description a {
+    font-weight: bold;
+}
+
+.contacts__wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 180px;
+    max-width: 611px;
+}
+
+footer {
+    border-top: 3px solid var(--dark-brown);
+    margin-top: auto;
+    font-size: 20px;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+footer .logo img {
+    width: 67px;
+    height: 56px;
+}
+
+footer .logo span {
+    margin-left: 48px;
+    font-size: 24px;
+}
+
+footer .footer-wrapper {
+    display: flex;
+    margin-left: 115px;
+}
+
+footer .footer-wrapper nav ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+footer .footer-wrapper .contacts {
+}
+
+.content-block {
+    margin: 90px auto 170px;
+}
+
+.title-block {
+    margin-top: 90px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title-block h1 {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.title-block .page-desc {
+    font-weight: 400;
+    font-size: 18px;
+    max-width: 535px;
+    margin-left: 150px;
 }

@@ -21,7 +21,7 @@
     display: block;
     width: 65px;
     height: 5px;
-    background: white;
+    background: var(--dark-brown);
     position: relative;
     transition: all 0.3s ease;
 }
@@ -32,7 +32,7 @@
     position: absolute;
     width: 65px;
     height: 5px;
-    background: white;
+    background: var(--dark-brown);
     left: 0;
     transition: all 0.3s ease;
 }
