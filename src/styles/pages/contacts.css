@@ -7,8 +7,13 @@
     color: var(--bg-color);
 }
 
+#contacts-page .container {
+    max-width: unset;
+}
+
 #contacts-page header {
     position: absolute;
+    background: transparent;
 }
 
 #contacts-page footer {
@@ -35,18 +40,19 @@
 #contacts-page main .contacts-info .contacts-info__title,
 #contacts-page main .contacts-info .contacts-info__items,
 #contacts-page main .contacts-info .contacts-info__scheme {
-    max-width: 550px;
+    max-width: 30.556rem;
 }
 
 #contacts-page main .contacts-info .contacts-info__title {
-    margin-bottom: 90px;
-    font-size: 40px;
+    margin-bottom: 5rem;
+    font-size: 2.222rem;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 #contacts-page main .contacts-info .contacts-info__items {
-    margin-bottom: 120px;
+    margin-bottom: 6.667rem;
+    margin-left: 0;
 }
 
 #contacts-page main .contacts-info__wrapper {
@@ -58,13 +64,13 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    gap: 70px 156px;
-    font-size: 18px;
+    gap: 3.889rem 8.667rem;
+    font-size: 1rem;
 }
 
 #contacts-page main .contacts .contacts__title {
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 1.111rem;
 }
 
 #contacts-page main .contacts .contacts__description {

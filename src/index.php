@@ -37,7 +37,7 @@
             </div>
         </div>
     </header>
-    <div class="index-page-slider slider">
+    <div class="index-page-slider">
         <div id="about-company-slide" class="slider__item">
             <div class="index-page-slider-info">
                 <div class="container index-page-slider-info__wrapper">

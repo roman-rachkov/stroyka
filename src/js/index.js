@@ -6,6 +6,11 @@ window.addEventListener('load', () => {
     indexPageLogic()
   }
 
+  if (document.getElementById('object-page')) {
+    objectPageLogic()
+  }
+
+
   const dots = document.querySelectorAll('.snake-dots');
   document.querySelector('#menu-toggle').addEventListener('change', (e) => {
     dots.forEach(el => {
@@ -107,6 +112,19 @@ const indexPageLogic = () => {
 
   document.addEventListener('mousemove', parallax);
   
+}
+
+const objectPageLogic = () => {
+  new Snake('.slider', {
+    mobileFirst: false,
+    swipe: true,
+    speed: 300,
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    arrows: false
+  })
 }
 
 const initMenu = () => {

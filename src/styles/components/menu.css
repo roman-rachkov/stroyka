@@ -10,8 +10,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 65px;
-    height: 40px;
+    width: 3.611rem;
+    height: 2.222rem;
     background: transparent;
     border: none;
     padding: 0;
@@ -19,8 +19,8 @@
 
 .menu-icon {
     display: block;
-    width: 65px;
-    height: 5px;
+    width: 3.611rem;
+    height: 0.278rem;
     background: var(--dark-brown);
     position: relative;
     transition: all 0.3s ease;
@@ -30,19 +30,19 @@
 .menu-icon::after {
     content: '';
     position: absolute;
-    width: 65px;
-    height: 5px;
+    width: 3.611rem;
+    height: 0.278rem;
     background: var(--dark-brown);
     left: 0;
     transition: all 0.3s ease;
 }
 
 .menu-icon::before {
-    top: -12px;
+    top: -0.667rem;
 }
 
 .menu-icon::after {
-    bottom: -12px;
+    bottom: -0.667rem;
 }
 
 .menu {
@@ -60,21 +60,21 @@
     flex-direction: column;
     justify-content: center;
     /*align-items: center;*/
-    padding: 20px;
+    padding: 1.111rem;
     box-sizing: border-box;
 }
 
 .menu-close-btn {
     position: absolute;
-    top: 30px;
-    right: 30px;
-    font-size: 40px;
+    top: 1.667rem;
+    right: 1.667rem;
+    font-size: 2.222rem;
     color: white;
     cursor: pointer;
     background: none;
     border: none;
-    width: 40px;
-    height: 40px;
+    width: 2.222rem;
+    height: 2.222rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,9 +95,9 @@
 }
 
 .menu li {
-    margin: 20px 0;
+    margin: 1.111rem 0;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(1.111rem);
     transition: all 0.3s ease;
 }
 
@@ -111,7 +111,7 @@
 .menu a {
     color: white;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 2.222rem;
     font-weight: bold;
     display: inline-block;
     transition: color 0.3s ease;
@@ -126,10 +126,10 @@
 .menu a::after {
     content: '';
     position: absolute;
-    bottom: 5px;
-    left: 20px;
-    right: 20px;
-    height: 1px;
+    bottom: 0.278rem;
+    left: 1.111rem;
+    right: 1.111rem;
+    height: 0.056rem;
     background: rgba(255, 255, 255, 0.3);
     transform: scaleX(0);
     transition: transform 0.3s ease;
@@ -175,28 +175,28 @@ body:has(#menu-toggle:checked) {
 /* Адаптивность */
 @media (max-width: 768px) {
     .menu a {
-        font-size: 20px;
+        font-size: 1.111rem;
     }
 
     .menu-close-btn {
-        top: 20px;
-        right: 20px;
-        font-size: 35px;
+        top: 1.111rem;
+        right: 1.111rem;
+        font-size: 1.944rem;
     }
 
     .menu li {
-        margin: 15px 0;
+        margin: 0.833rem 0;
     }
 }
 
 @media (max-width: 480px) {
     .menu a {
-        font-size: 18px;
+        font-size: 1rem;
     }
 
     .menu-close-btn {
-        top: 15px;
-        right: 15px;
-        font-size: 30px;
+        top: 0.833rem;
+        right: 0.833rem;
+        font-size: 1.667rem;
     }
 }

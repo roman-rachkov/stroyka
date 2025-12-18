@@ -6,20 +6,22 @@
     position: relative;
     color: var(--bg-color);
 }
-
+#index-page .container{
+    max-width: unset;
+}
 #index-page .snake-dots {
     bottom: 3.2vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 18px;
+    gap: 1rem;
     z-index: 100;
 }
 #index-page .snake-dots li,
 #index-page .snake-dots li button,
 #index-page .snake-dots li button:before {
-    width: 62px;
-    height: 5px;
+    width: 3.444rem;
+    height: 0.278rem;
 }
 
 #index-page .snake-dots li button:before {
@@ -39,21 +41,21 @@
 #index-page .snake-arrow.snake-next:before {
     background: url("../../assets/icons/arrow-white.svg") no-repeat center;
     border: none;
-    width: 90px;
-    height: 30px;
+    width: 5rem;
+    height: 1.667rem;
 }
 
 #index-page .snake-arrow.snake-next:after {
     content: attr(data-text-after);
     display: inline;
     color: var(--second-color);
-    font-size: 24px;
+    font-size: 1.333rem;
     letter-spacing: 0;
     text-transform: uppercase;
     font-weight: 300;
     line-height: 1;
     position: absolute;
-    right: 100px;
+    right: 5.556rem;
     top: 50%;
     transform: translateY(-50%);
     width: max-content;
@@ -62,12 +64,13 @@
 
 #index-page .snake-arrow.snake-next {
     right: 3.35vw;
-    width: 90px;
-    height: 30px;
+    width: 5rem;
+    height: 1.667rem;
 }
 
 #index-page header {
     position: absolute;
+    background: transparent;
 }
 
 #index-page .index-page-slider {
@@ -99,43 +102,43 @@
 
 
 #index-page .index-page-slider .slider__item .index-page-slider-info .index-page-slider-info__description {
-    font-size: 15px;
-    max-width: 375px;
-    margin-bottom: 130px;
+    font-size: 0.833rem;
+    max-width: 20.833rem;
+    margin-bottom: 7.222rem;
 }
 
 #index-page .index-page-slider .slider__item .index-page-slider-info .index-page-slider-info__buttons {
-    max-width: 375px;
+    max-width: 20.833rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 25px 18px;
+    gap: 1.389rem 1rem;
 }
 
 #index-page .index-page-slider .slider__item .index-page-slider-info .index-page-slider-info__button {
     background: transparent;
     border-radius: 82px;
-    padding: 12px 75px 12px 16px;
-    border: solid 3px var(--second-color);
+    padding: 0.667rem 4.167rem 0.667rem 0.889rem;
+    border: solid 0.167rem var(--second-color);
     color: var(--second-color);
     text-decoration: none;
     text-align: left;
-    font-size: 15px;
+    font-size: 0.833rem;
     position: relative;
 }
 
 #index-page .index-page-slider .slider__item .index-page-slider-info .index-page-slider-info__button:hover {
     cursor: pointer;
-    transform: translate(-2px, -2px);
+    transform: translate(-0.111rem, -0.111rem);
 }
 
 #index-page .index-page-slider .slider__item .index-page-slider-info .index-page-slider-info__button:after {
     content: '';
     background: url("../../assets/icons/arrow-white.svg") no-repeat center;
     background-size: contain;
-    width: 37px;
-    height: 20px;
+    width: 2.056rem;
+    height: 1.111rem;
     position: absolute;
-    right: 17px;
+    right: 0.944rem;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -145,16 +148,16 @@
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
-    margin-bottom: 42px;
+    margin-bottom: 2.333rem;
 }
 
 #index-page .index-page-slider .slider__item .index-page-slider-info .index-page-slider-info__title-number {
-    font-size: 74px;
-    margin-bottom: 31px;
+    font-size: 4.111rem;
+    margin-bottom: 1.722rem;
 }
 
 #index-page .index-page-slider .slider__item .index-page-slider-info .index-page-slider-info__title-text {
-    font-size: 40px;
+    font-size: 2.222rem;
 }
 
 #index-page .index-page-slider .slider__item .index-page-slider__picture {
@@ -175,8 +178,8 @@
     overflow: hidden;
     top: 50%;
     opacity: 0;
-    transform: translateY(-50%) translateX(100px);
-    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.6s ease;
+    transform: translateY(-50%) translateX(5.556rem);
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.6s ease-in;
 }
 
 #index-page .index-page-slider .slider__item .index-page-slider__picture .index-page-slider-image::after {
@@ -198,8 +201,8 @@
     position: relative;
     top: 50%;
     opacity: 0;
-    transform: translateY(-50%) translateX(100px);
-    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.6s ease;
+    transform: translateY(-50%) translateX(5.556rem);
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.6s ease-in;
 }
 
 #index-page .index-page-slider .slider__item .index-page-slider__picture .index-page-slider-image.index-page-slider__small-image {
@@ -251,7 +254,7 @@
 #index-page .index-page-slider .slider__item .index-page-slider-info .index-page-slider-info__description,
 #index-page .index-page-slider .slider__item .index-page-slider-info .index-page-slider-info__buttons {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(5.556rem);
     transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.6s ease;
 }
 
