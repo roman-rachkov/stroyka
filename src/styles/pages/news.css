@@ -1,0 +1,71 @@
+#news-page .news__items {
+    display: flex;
+    flex-direction: column;
+}
+
+#news-page .news__items .news__item:not(:first-child) {
+    padding-top: 3.889rem;
+}
+
+#news-page .news__items .news__item {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    padding-bottom: 3.889rem;
+    border-bottom: 0.167rem solid var(--dark-brown);
+    align-items: stretch; /* Выравниваем элементы по высоте */
+}
+#news-page .news__items .news__item:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+/* Нечетные элементы (по умолчанию) - картинка слева */
+#news-page .news__items .news__item:nth-child(odd) {
+    grid-template-areas: "img img img img img img . text text text text text";
+}
+
+/* Четные элементы - картинка справа */
+#news-page .news__items .news__item:nth-child(even) {
+    grid-template-areas: "text text text text text . img img img img img img";
+}
+
+#news-page .news__items .news__item .news__img {
+    grid-area: img;
+    object-fit: cover;
+    width: 100%;
+    height: 100%; /* Занимает всю высоту своей области */
+    max-height: 22.222rem; /* Ограничиваем максимальную высоту */
+}
+
+#news-page .news__items .news__item .news__info {
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Занимает всю высоту своей области */
+}
+
+/* Текстовые стили */
+#news-page .news__items .news__item .news__info h3 {
+    font-size: 1.667rem;
+    margin-bottom: 1.389rem;
+}
+
+#news-page .news__items .news__item .news__info .news__desc {
+    margin-bottom: auto;
+    flex-grow: 1;
+}
+
+/* Стили для кнопки */
+#news-page .news__items .news__item .news__info .news__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: auto;
+    border: 0.167rem solid var(--dark-brown);
+    width: 8.889rem;
+    height: 8.889rem;
+    text-transform: uppercase;
+    font-size: 1.111rem;
+    font-weight: bold;
+}

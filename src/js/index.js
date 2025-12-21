@@ -23,16 +23,18 @@ window.addEventListener('load', () => {
 })
 
 const indexPageLogic = () => {
-  new Snake('.index-page-slider', {
+  const snake = new Snake('.index-page-slider', {
     mobileFirst: false,
-    swipe: true,
-    speed: 300,
+    swipe: false,
+    speed: 1000,
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
     arrows: true
   })
+
+  console.log(snake)
 
   const slides = document.querySelectorAll('.index-page-slider .slider__item');
   const arrow = document.querySelectorAll('#index-page .snake-arrow.snake-next')[0];
