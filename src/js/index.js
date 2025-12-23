@@ -15,6 +15,11 @@ window.addEventListener('load', () => {
   }
 
 
+
+  if (document.getElementById('contacts-page')) {
+    contactsPageLogic()
+  }
+
   const dots = document.querySelectorAll('.snake-dots');
   document.querySelector('#menu-toggle').addEventListener('change', (e) => {
     dots.forEach(el => {
@@ -139,7 +144,14 @@ const objectPageLogic = () => {
     arrows: false
   })
 }
-
+const contactsPageLogic = () => {
+  document.querySelector('.map-btn').addEventListener('click', (e) => {
+    console.log('work')
+    e.preventDefault();
+    document.querySelector('.contacts-map .map.disabled').classList.remove('disabled')
+    document.querySelector('.contacts-map .map-btn').style.display = 'none';
+  })
+}
 const newsItemPageLogic = () => {
   const isMobile = window.innerWidth <= 768;
   const sliderSelector = isMobile ? '.slider.hide-on-desktop' : '.slider.hide-on-mobile';

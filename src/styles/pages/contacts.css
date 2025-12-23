@@ -89,8 +89,11 @@
     border: none;
     position: relative;
 }
-
-#contacts-page main .contacts-map:after {
+#contacts-page main .contacts-map .map{
+    width: 100%;
+    height: 100%;
+}
+#contacts-page main .contacts-map .map-btn:after {
     content: '';
     display: block;
     width: 100%;
@@ -102,6 +105,10 @@
     top: 0;
 }
 
+#contacts-page main .contacts-map .map.disabled{
+    display: none;
+}
+#contacts-page main .contacts-map .map-btn,
 #contacts-page main .contacts-map img {
     width: 100%;
     height: 100%;

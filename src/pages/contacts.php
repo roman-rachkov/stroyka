@@ -49,15 +49,26 @@
                     </div>
                     <div class="contacts__item">
                         <div class="contacts__title">WhatsApp</div>
-                        <div class="contacts__description"><a href="https://wa.me/79025242324">+7 902-524-23-24</a></div>
+                        <div class="contacts__description"><a href="https://wa.me/79025242324">+7 902-524-23-24</a>
+                        </div>
                     </div>
                 </div>
                 <p class="contacts-info__scheme">Схема проезда</p>
             </div>
         </div>
-        <button class="contacts-map" onclick="alert(123)">
-            <img src="../assets/images/index-slider-contacts.jpg" alt="map">
-        </button>
+
+        <div class="contacts-map">
+            <button class="map-btn">
+                <img src="../assets/images/index-slider-contacts.jpg" alt="map">
+            </button>
+            <div class="map disabled">
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A8b546c4ee1996a15514b6cbd7d7ba4abbfc7c735e8202b2b418ff63af3000c0d&amp;source=constructor"
+                    width="100%" height="100%" frameborder="0"></iframe>
+            </div>
+        </div>
+
+
     </main>
 
     <footer>
