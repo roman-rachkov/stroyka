@@ -1,9 +1,15 @@
-:root{
+:root {
     --bg-color: #F5F2F0;
     --main-color: #3A2A2A;
     --second-color: #F5F2F0;
     --dark-brown: #221717;
     --delimiter-color: #493D3D;
     font-family: 'Inter', systemui, sans-serif;
-    font-size: 18px;
+    --font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        font-size: 13px;
+    }
 }

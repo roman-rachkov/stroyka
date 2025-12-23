@@ -6,6 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Владстройзаказчик</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"
+    />
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
@@ -29,9 +33,14 @@
     <main class="container">
         <div class="content-block">
             <div class="news-item">
+                <div class="news-item__title-block hide-on-desktop">
+                    <h3 class="news-item__title">Fusce at nisi arcu. Quisque sed dolor nec dui scelerisque
+                        dapibus.</h3>
+                    <span class="news-item__date">05.06.2025</span>
+                </div>
                 <div class="news-item__info">
-                    <div class="news-item__title-block">
-                        <h3 class="new-item__title">Fusce at nisi arcu. Quisque sed dolor nec dui scelerisque
+                    <div class="news-item__title-block hide-on-mobile">
+                        <h3 class="news-item__title">Fusce at nisi arcu. Quisque sed dolor nec dui scelerisque
                             dapibus.</h3>
                         <span class="news-item__date">05.06.2025</span>
                     </div>
@@ -42,14 +51,125 @@
                 </div>
                 <img src="../assets/images/news-item-main.jpg" alt="" class="news-item__img">
             </div>
-            <div class="gallery">
-                <img src="../assets/images/news-item-1.jpg" alt="">
-                <img src="../assets/images/news-item-2.jpg" alt="">
-                <img src="../assets/images/news-item-3.jpg" alt="">
-                <img src="../assets/images/news-item-4.jpg" alt="">
+            <div class="gallery slider hide-on-mobile">
+
+                <div class="slider-item"><a href="../assets/images/news-item-1.jpg" data-fancybox="gallery-desktop"
+                                            data-caption="Caption"><img src="../assets/images/news-item-1.jpg"
+                                                                        alt=""></a>
+                </div>
+                <div class="slider-item"><a href="../assets/images/news-item-2.jpg" data-fancybox="gallery-desktop"
+                                            data-caption="Caption"><img src="../assets/images/news-item-2.jpg"
+                                                                        alt=""></a>
+                </div>
+                <div class="slider-item"><a href="../assets/images/news-item-3.jpg" data-fancybox="gallery-desktop"
+                                            data-caption="Caption"><img src="../assets/images/news-item-3.jpg"
+                                                                        alt=""></a>
+                </div>
+                <div class="slider-item"><a href="../assets/images/news-item-4.jpg" data-fancybox="gallery-desktop"
+                                            data-caption="Caption"><img src="../assets/images/news-item-4.jpg"
+                                                                        alt=""></a>
+                </div>
+
+
+                <div class="slider-item"><a href="../assets/images/news-item-1.jpg" data-fancybox="gallery-desktop"
+                                            data-caption="Caption"><img src="../assets/images/news-item-1.jpg"
+                                                                        alt=""></a>
+                </div>
+                <div class="slider-item"><a href="../assets/images/news-item-2.jpg" data-fancybox="gallery-desktop"
+                                            data-caption="Caption"><img src="../assets/images/news-item-2.jpg"
+                                                                        alt=""></a>
+                </div>
+                <div class="slider-item"><a href="../assets/images/news-item-3.jpg" data-fancybox="gallery-desktop"
+                                            data-caption="Caption"><img src="../assets/images/news-item-3.jpg"
+                                                                        alt=""></a>
+                </div>
+                <div class="slider-item"><a href="../assets/images/news-item-4.jpg" data-fancybox="gallery-desktop"
+                                            data-caption="Caption"><img src="../assets/images/news-item-4.jpg"
+                                                                        alt=""></a>
+                </div>
+
+
+                <div class="slider-item"><a href="../assets/images/news-item-1.jpg" data-fancybox="gallery-desktop"
+                                            data-caption="Caption"><img src="../assets/images/news-item-1.jpg"
+                                                                        alt=""></a>
+                </div>
+                <div class="slider-item"><a href="../assets/images/news-item-2.jpg" data-fancybox="gallery-desktop"
+                                            data-caption="Caption"><img src="../assets/images/news-item-2.jpg"
+                                                                        alt=""></a>
+                </div>
+                <div class="slider-item"><a href="../assets/images/news-item-3.jpg" data-fancybox="gallery-desktop"
+                                            data-caption="Caption"><img src="../assets/images/news-item-3.jpg"
+                                                                        alt=""></a>
+                </div>
+                <div class="slider-item"><a href="../assets/images/news-item-4.jpg" data-fancybox="gallery-desktop"
+                                            data-caption="Caption"><img src="../assets/images/news-item-4.jpg"
+                                                                        alt=""></a>
+                </div>
+
+
+            </div>
+            <div class="gallery slider hide-on-desktop">
+
+                <div class="slider-item">
+                    <a href="../assets/images/news-item-1.jpg" data-fancybox="gallery-mobile"
+                       data-caption="Caption">
+                        <img src="../assets/images/news-item-1.jpg" alt="">
+                    </a>
+                    <a href="../assets/images/news-item-2.jpg" data-fancybox="gallery-mobile"
+                       data-caption="Caption">
+                        <img src="../assets/images/news-item-2.jpg" alt="">
+                    </a>
+                    <a href="../assets/images/news-item-3.jpg" data-fancybox="gallery-mobile"
+                       data-caption="Caption">
+                        <img src="../assets/images/news-item-3.jpg" alt="">
+                    </a>
+                    <a href="../assets/images/news-item-4.jpg" data-fancybox="gallery-mobile"
+                       data-caption="Caption">
+                        <img src="../assets/images/news-item-4.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="slider-item">
+                    <a href="../assets/images/news-item-1.jpg" data-fancybox="gallery-mobile"
+                       data-caption="Caption">
+                        <img src="../assets/images/news-item-1.jpg" alt="">
+                    </a>
+                    <a href="../assets/images/news-item-2.jpg" data-fancybox="gallery-mobile"
+                       data-caption="Caption">
+                        <img src="../assets/images/news-item-2.jpg" alt="">
+                    </a>
+                    <a href="../assets/images/news-item-3.jpg" data-fancybox="gallery-mobile"
+                       data-caption="Caption">
+                        <img src="../assets/images/news-item-3.jpg" alt="">
+                    </a>
+                    <a href="../assets/images/news-item-4.jpg" data-fancybox="gallery-mobile"
+                       data-caption="Caption">
+                        <img src="../assets/images/news-item-4.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="slider-item">
+                    <a href="../assets/images/news-item-1.jpg" data-fancybox="gallery-mobile"
+                       data-caption="Caption">
+                        <img src="../assets/images/news-item-1.jpg" alt="">
+                    </a>
+                    <a href="../assets/images/news-item-2.jpg" data-fancybox="gallery-mobile"
+                       data-caption="Caption">
+                        <img src="../assets/images/news-item-2.jpg" alt="">
+                    </a>
+                    <a href="../assets/images/news-item-3.jpg" data-fancybox="gallery-mobile"
+                       data-caption="Caption">
+                        <img src="../assets/images/news-item-3.jpg" alt="">
+                    </a>
+                    <a href="../assets/images/news-item-4.jpg" data-fancybox="gallery-mobile"
+                       data-caption="Caption">
+                        <img src="../assets/images/news-item-4.jpg" alt="">
+                    </a>
+                </div>
+
             </div>
             <div class="arrows">
-                <a href="#" class="arrow arrow_left">Назад</a>
+                <a href="#" class="arrow arrow-left">Назад</a>
                 <a href="#" class="arrow arrow-right">Вперед</a>
             </div>
         </div>
@@ -102,6 +222,7 @@
         </div>
     </footer>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
 <script src="../js/index.js" type="module"></script>
 </body>
 </html>

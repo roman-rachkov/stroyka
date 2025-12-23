@@ -33,7 +33,8 @@
             </div>
             <div class="content-block news">
                 <div class="news__items">
-                    <div class="news__item"><img src="../assets/images/news-page-1.jpg" alt="" class="news__img">
+                    <div class="news__item">
+                        <img src="../assets/images/news-page-1.jpg" alt="" class="news__img">
                         <div class="news__info">
                             <h3 class="news__title">Lorem ipsum.</h3>
                             <p class="news__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi

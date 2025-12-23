@@ -121,3 +121,39 @@
 #contacts-page footer {
     border: none;
 }
+
+@media screen and (max-width: 768px) {
+    #contacts-page main {
+        flex-direction: column-reverse;
+    }
+
+    #contacts-page main .contacts-map{
+        width: 100%;
+        height: 57.55vh;
+    }
+
+    #contacts-page main .contacts-info {
+        height: auto;
+        position: relative;
+        margin-top: 2.154rem;
+    }
+    #contacts-page main .contacts-info__title {
+        font-size: 1.991rem;
+        margin-bottom: 1.923rem;
+    }
+    #contacts-page main .contacts-info .contacts{
+        gap: 3.538rem 1.538rem;
+    }
+    #contacts-page main .contacts-info .contacts__item{
+        max-width: 12.692rem;
+    }
+    #contacts-page main .contacts-info .contacts__title{
+        margin-bottom: 0.769rem;
+    }
+    #contacts-page main .contacts-info .contacts__description{
+        width: auto;
+    }
+    #contacts-page main .contacts-info .contacts-info__scheme{
+        display: none;
+    }
+}

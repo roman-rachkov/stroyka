@@ -39,71 +39,81 @@
                             <div class="objects__item-image-wrapper">
                                 <img src="../assets/images/objects-1.jpg" alt="">
                             </div>
-                            <span class="objects__item-address">город Владивосток,<br> улица Володарского 38</span>
-                            <span class="objects__item-date">Дата эксплуатации: 15.03.2024</span>
+                            <span class="objects__item-title hide-on-desktop">ЖК «Высоцкий»</span>
+                            <span class="objects__item-address hide-on-mobile">город Владивосток,<br> улица Володарского 38</span>
+                            <span class="objects__item-date hide-on-mobile">Дата эксплуатации: 15.03.2024</span>
                         </div>
                         <div class="objects__item">
                             <div class="objects__item-image-wrapper">
                                 <img src="../assets/images/objects-2.jpg" alt="">
                             </div>
-                            <span class="objects__item-address">город Владивосток,<br> улица Володарского 38</span>
-                            <span class="objects__item-date">Дата эксплуатации: 15.03.2024</span>
+                            <span class="objects__item-title hide-on-desktop">ЖК «Высоцкий»</span>
+                            <span class="objects__item-address hide-on-mobile">город Владивосток,<br> улица Володарского 38</span>
+                            <span class="objects__item-date hide-on-mobile">Дата эксплуатации: 15.03.2024</span>
                         </div>
                         <div class="objects__item">
                             <div class="objects__item-image-wrapper">
                                 <img src="../assets/images/objects-3.jpg" alt="">
                             </div>
-                            <span class="objects__item-address">город Владивосток,<br> улица Володарского 38</span>
-                            <span class="objects__item-date">Дата эксплуатации: 15.03.2024</span>
+                            <span class="objects__item-title hide-on-desktop">ЖК «Высоцкий»</span>
+                            <span class="objects__item-address hide-on-mobile">город Владивосток,<br> улица Володарского 38</span>
+                            <span class="objects__item-date hide-on-mobile">Дата эксплуатации: 15.03.2024</span>
                         </div>
                         <div class="objects__item">
                             <div class="objects__item-image-wrapper">
                                 <img src="../assets/images/objects-4.jpg" alt="">
                             </div>
-                            <span class="objects__item-address">город Владивосток,<br> улица Володарского 38</span>
-                            <span class="objects__item-date">Дата эксплуатации: 15.03.2024</span>
+                            <span class="objects__item-title hide-on-desktop">ЖК «Высоцкий»</span>
+                            <span class="objects__item-address hide-on-mobile">город Владивосток,<br> улица Володарского 38</span>
+                            <span class="objects__item-date hide-on-mobile">Дата эксплуатации: 15.03.2024</span>
                         </div>
                         <div class="objects__item">
                             <div class="objects__item-image-wrapper">
                                 <img src="../assets/images/objects-5.jpg" alt="">
                             </div>
-                            <span class="objects__item-address">город Владивосток,<br> улица Володарского 38</span>
-                            <span class="objects__item-date">Дата эксплуатации: 15.03.2024</span>
+                            <span class="objects__item-title hide-on-desktop">ЖК «Высоцкий»</span>
+                            <span class="objects__item-address hide-on-mobile">город Владивосток,<br> улица Володарского 38</span>
+                            <span class="objects__item-date hide-on-mobile">Дата эксплуатации: 15.03.2024</span>
                         </div>
                         <div class="objects__item">
                             <div class="objects__item-image-wrapper">
                                 <img src="../assets/images/objects-5.jpg" alt="">
                             </div>
-                            <span class="objects__item-address">город Владивосток,<br> улица Володарского 38</span>
-                            <span class="objects__item-date">Дата эксплуатации: 15.03.2024</span>
+                            <span class="objects__item-title hide-on-desktop">ЖК «Высоцкий»</span>
+                            <span class="objects__item-address hide-on-mobile">город Владивосток,<br> улица Володарского 38</span>
+                            <span class="objects__item-date hide-on-mobile">Дата эксплуатации: 15.03.2024</span>
                         </div>
                         <div class="objects__item">
                             <div class="objects__item-image-wrapper">
                                 <img src="../assets/images/objects-5.jpg" alt="">
                             </div>
-                            <span class="objects__item-address">город Владивосток,<br> улица Володарского 38</span>
-                            <span class="objects__item-date">Дата эксплуатации: 15.03.2024</span>
+                            <span class="objects__item-title hide-on-desktop">ЖК «Высоцкий»</span>
+                            <span class="objects__item-address hide-on-mobile">город Владивосток,<br> улица Володарского 38</span>
+                            <span class="objects__item-date hide-on-mobile">Дата эксплуатации: 15.03.2024</span>
                         </div>
                         <div class="objects__item">
                             <div class="objects__item-image-wrapper">
                                 <img src="../assets/images/objects-5.jpg" alt="">
                             </div>
-                            <span class="objects__item-address">город Владивосток,<br> улица Володарского 38</span>
-                            <span class="objects__item-date">Дата эксплуатации: 15.03.2024</span>
+                            <span class="objects__item-title hide-on-desktop">ЖК «Высоцкий»</span>
+                            <span class="objects__item-address hide-on-mobile">город Владивосток,<br> улица Володарского 38</span>
+                            <span class="objects__item-date hide-on-mobile">Дата эксплуатации: 15.03.2024</span>
                         </div>
                         <div class="objects__item">
                             <div class="objects__item-image-wrapper">
                                 <img src="../assets/images/objects-5.jpg" alt="">
                             </div>
-                            <span class="objects__item-address">город Владивосток,<br> улица Володарского 38</span>
-                            <span class="objects__item-date">Дата эксплуатации: 15.03.2024</span>
+                            <span class="objects__item-title hide-on-desktop">ЖК «Высоцкий»</span>
+                            <span class="objects__item-address hide-on-mobile">город Владивосток,<br> улица Володарского 38</span>
+                            <span class="objects__item-date hide-on-mobile">Дата эксплуатации: 15.03.2024</span>
                         </div>
                         <div class="objects__item">
                             <div class="objects__item-image-wrapper">
                                 <img src="../assets/images/objects-6.jpg" alt="">
                             </div>
-                            <span class="objects__item-address">город Владивосток,<br> улица Володарского 38</span>
-                            <span class="objects__item-date">Дата эксплуатации: 15.03.2024</span>
+                            <span class="objects__item-title hide-on-desktop">ЖК «Высоцкий»</span>
+                            <span class="objects__item-address hide-on-mobile">город Владивосток,<br> улица Володарского 38</span>
+                            <span class="objects__item-date hide-on-mobile">Дата эксплуатации: 15.03.2024</span>
                         </div>
                     </div>
                 </div>
@@ -114,37 +124,43 @@
                             <div class="objects__item-image-wrapper">
                                 <img src="../assets/images/objects-1.jpg" alt="">
                             </div>
-                            <span class="objects__item-address">город Владивосток,<br> улица Володарского 38</span>
+                            <span class="objects__item-title hide-on-desktop">ЖК «Высоцкий»</span>
+                            <span class="objects__item-address hide-on-mobile">город Владивосток,<br> улица Володарского 38</span>
                         </a>
                         <a href="/pages/object.php" class="objects__item">
                             <div class="objects__item-image-wrapper">
                                 <img src="../assets/images/objects-2.jpg" alt="">
                             </div>
-                            <span class="objects__item-address">город Владивосток,<br> улица Володарского 38</span>
+                            <span class="objects__item-title hide-on-desktop">ЖК «Высоцкий»</span>
+                            <span class="objects__item-address hide-on-mobile">город Владивосток,<br> улица Володарского 38</span>
                         </a>
                         <a href="/pages/object.php" class="objects__item">
                             <div class="objects__item-image-wrapper">
                                 <img src="../assets/images/objects-3.jpg" alt="">
                             </div>
-                            <span class="objects__item-address">город Владивосток,<br> улица Володарского 38</span>
+                            <span class="objects__item-title hide-on-desktop">ЖК «Высоцкий»</span>
+                            <span class="objects__item-address hide-on-mobile">город Владивосток,<br> улица Володарского 38</span>
                         </a>
                         <a href="/pages/object.php" class="objects__item">
                             <div class="objects__item-image-wrapper">
                                 <img src="../assets/images/objects-4.jpg" alt="">
                             </div>
-                            <span class="objects__item-address">город Владивосток,<br> улица Володарского 38</span>
+                            <span class="objects__item-title hide-on-desktop">ЖК «Высоцкий»</span>
+                            <span class="objects__item-address hide-on-mobile">город Владивосток,<br> улица Володарского 38</span>
                         </a>
                         <a href="/pages/object.php" class="objects__item">
                             <div class="objects__item-image-wrapper">
                                 <img src="../assets/images/objects-5.jpg" alt="">
                             </div>
-                            <span class="objects__item-address">город Владивосток,<br> улица Володарского 38</span>
+                            <span class="objects__item-title hide-on-desktop">ЖК «Высоцкий»</span>
+                            <span class="objects__item-address hide-on-mobile">город Владивосток,<br> улица Володарского 38</span>
                         </a>
                         <a href="/pages/object.php" class="objects__item">
                             <div class="objects__item-image-wrapper">
                                 <img src="../assets/images/objects-6.jpg" alt="">
                             </div>
-                            <span class="objects__item-address">город Владивосток,<br> улица Володарского 38</span>
+                            <span class="objects__item-title hide-on-desktop">ЖК «Высоцкий»</span>
+                            <span class="objects__item-address hide-on-mobile">город Владивосток,<br> улица Володарского 38</span>
                         </a>
                     </div>
                 </div>

@@ -174,8 +174,12 @@ body:has(#menu-toggle:checked) {
 
 /* Адаптивность */
 @media (max-width: 768px) {
+    .menu ul{
+        left: 0;
+    }
+
     .menu a {
-        font-size: 1.111rem;
+        font-size: 1.333rem;
     }
 
     .menu-close-btn {
@@ -185,18 +189,6 @@ body:has(#menu-toggle:checked) {
     }
 
     .menu li {
-        margin: 0.833rem 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .menu a {
-        font-size: 1rem;
-    }
-
-    .menu-close-btn {
-        top: 0.833rem;
-        right: 0.833rem;
-        font-size: 1.667rem;
+        margin: 1.944rem 0;
     }
 }

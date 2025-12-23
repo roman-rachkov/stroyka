@@ -84,7 +84,8 @@
     align-items: flex-start;
     height: 100%;
 }
-#object-page .second-block .text p:not(:last-child){
+
+#object-page .second-block .text p:not(:last-child) {
     margin-bottom: 1.667rem;
 }
 
@@ -94,24 +95,27 @@
     height: 22.222rem;
 }
 
-#object-page .achievements-block .achievements .achievements__items{
+#object-page .achievements-block .achievements .achievements__items {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1.111rem;
 }
-#object-page .achievements-block .achievements .achievements__item{
+
+#object-page .achievements-block .achievements .achievements__item {
     display: flex;
     flex-direction: column;
 }
+
 #object-page .achievements-block .achievements h3 {
     margin-bottom: 6.444rem;
 }
 
 #object-page .achievements-block .achievements .achievements__item-digit,
-#object-page .achievements-block .achievements h3{
+#object-page .achievements-block .achievements h3 {
     font-weight: bold;
     font-size: 1.667rem;
 }
+
 #object-page .achievements-block .achievements {
     grid-column: 1 / 6;
 }
@@ -121,11 +125,14 @@
     font-size: 1rem;
 }
 
-#object-page .achievements-block .text h6{
+#object-page .achievements-block .text h6 {
     margin-bottom: 0.667rem;
+    font-size: 1rem;
+
 }
+
 #object-page .achievements-block .text ul {
-    list-style: none; /* Убираем стандартные маркеры */
+    list-style: none;
     padding-left: 0;
 }
 
@@ -134,18 +141,15 @@
 }
 
 #object-page .achievements-block .text li::before {
-    content: "•"; /* Или другой символ */
+    content: "•";
     display: inline-block;
     margin-right: 0.222rem;
     color: var(--dark-brown);
     font-size: 1.2em;
 }
 
-#object-page .third-block h3{
+#object-page .third-block h3 {
     margin-bottom: 4.778rem;
-}
-#object-page .third-block {
-    align-items: start;
 }
 
 #object-page .third-block img {
@@ -167,9 +171,91 @@
 #object-page .achievements-block .achievements .achievements__items .achievements__item:nth-child(1) {
     grid-column: span 2;
 }
+
 #object-page .achievements-block .achievements .achievements__items .achievements__item:nth-child(2) {
     grid-column: span 1;
 }
+
 #object-page .achievements-block .achievements .achievements__items .achievements__item:nth-child(3) {
     grid-column: span 1;
+}
+
+@media screen and (max-width: 768px) {
+    #object-page .content-block > div:not(.slider) {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0 1.538rem;
+        margin-bottom: 5.385rem;
+    }
+    #object-page .content-block > div:last-child{
+        margin-bottom: 0;
+    }
+
+    #object-page .main-block {
+    }
+
+    #object-page .main-block h2.hide-on-desktop {
+        font-size: 1.231em;
+        margin-bottom: 1.538rem;
+    }
+
+    #object-page .main-block h2.hide-on-desktop,
+    #object-page .main-block img,
+    #object-page .main-block .description,
+    #object-page .second-block img,
+    #object-page .second-block .text,
+    #object-page .achievements-block .achievements,
+    #object-page .achievements-block .text {
+        grid-column: 1 / 5;
+    }
+
+    #object-page .main-block .description {
+        margin-top: 1.154rem;
+    }
+
+    #object-page .main-block .info {
+        width: 100%;
+        font-size: 1.231rem;
+    }
+
+    #object-page .second-block img {
+        margin-bottom: 1.154rem;
+    }
+
+    #object-page .second-block .text p:not(:last-child) {
+        margin-bottom: 1.154rem;
+    }
+
+    #object-page .slider {
+        max-height: 19.231rem;
+        margin-bottom: 7.692rem;
+    }
+
+    #object-page .slider .snake-dots li {
+        width: 1.154rem;
+        height: 1.154rem;
+    }
+
+    #object-page .achievements-block .achievements {
+        margin-bottom: 1.923rem;
+    }
+
+    #object-page .achievements-block .achievements .achievements__item-digit,
+    #object-page .achievements-block .achievements h3 {
+
+        font-size: 1.231rem;
+    }
+
+    #object-page .achievements-block .achievements h3 {
+        margin-bottom: 1.538rem;
+    }
+
+    #object-page .achievements-block .text {
+        font-size: 1rem;
+    }
+
+    #object-page .third-block > * {
+        grid-column: 1 / 4 !important;
+        margin-bottom: 1.385rem!important;
+    }
+
 }

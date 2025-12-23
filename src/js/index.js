@@ -10,6 +10,10 @@ window.addEventListener('load', () => {
     objectPageLogic()
   }
 
+  if (document.getElementById('news-item-page')) {
+    newsItemPageLogic()
+  }
+
 
   const dots = document.querySelectorAll('.snake-dots');
   document.querySelector('#menu-toggle').addEventListener('change', (e) => {
@@ -18,6 +22,12 @@ window.addEventListener('load', () => {
     })
   })
 
+  if (document.querySelector('[data-fancybox]') && !document.getElementById('news-item-page')) {
+    Fancybox.bind("[data-fancybox]", {
+      // Your custom options
+    });
+  }
+
   document.getElementById('loader').style.display = 'none';
 
 })
@@ -25,16 +35,17 @@ window.addEventListener('load', () => {
 const indexPageLogic = () => {
   const snake = new Snake('.index-page-slider', {
     mobileFirst: false,
-    swipe: false,
+    swipe: true,
     speed: 1000,
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
-    arrows: true
+    arrows: true,
+    fade: true
   })
 
-  console.log(snake)
+  document.querySelector('#index-page .snake-dots').classList.add('container');
 
   const slides = document.querySelectorAll('.index-page-slider .slider__item');
   const arrow = document.querySelectorAll('#index-page .snake-arrow.snake-next')[0];
@@ -113,7 +124,7 @@ const indexPageLogic = () => {
   }
 
   document.addEventListener('mousemove', parallax);
-  
+
 }
 
 const objectPageLogic = () => {
@@ -127,6 +138,51 @@ const objectPageLogic = () => {
     infinite: true,
     arrows: false
   })
+}
+
+const newsItemPageLogic = () => {
+  const isMobile = window.innerWidth <= 768;
+  const sliderSelector = isMobile ? '.slider.hide-on-desktop' : '.slider.hide-on-mobile';
+  const sliderEl = document.querySelector(sliderSelector);
+
+  if (!sliderEl) return;
+
+  const snake = new Snake(sliderEl, {
+    mobileFirst: false,
+    swipe: true,
+    speed: 300,
+    dots: false,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    infinite: true,
+    arrows: false,
+    responsive: [{
+      breakpoint: 768, settings: {
+        slidesToShow: 1, slidesToScroll: 1,
+      }
+    }]
+  });
+
+  const galleryId = isMobile ? 'gallery-mobile' : 'gallery-desktop';
+  Fancybox.bind(`[data-fancybox='${galleryId}']`, {
+    on: {
+      destroy: () => {
+        setTimeout(() => {
+          snake.applySettings(false);
+        }, 10);
+      },
+    },
+  });
+
+  document.querySelector('.arrow.arrow-right').addEventListener('click', e => {
+    e.preventDefault();
+    snake.goTo(snake.getNext());
+  });
+
+  document.querySelector('.arrow.arrow-left').addEventListener('click', e => {
+    e.preventDefault();
+    snake.goTo(snake.getPrev());
+  });
 }
 
 const initMenu = () => {
